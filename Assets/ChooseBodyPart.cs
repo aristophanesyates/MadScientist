@@ -41,6 +41,6 @@ public class ChooseBodyPart : MonoBehaviour
     {
         GameObject newLimb = limb;
         Instantiate(newLimb, bodyParts[bodyPartIndex].transform);
-        coolerIndex++;
+        //coolerIndex++;
     }
 }
