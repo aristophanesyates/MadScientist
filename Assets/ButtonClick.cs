@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ButtonClick : MonoBehaviour
 {
@@ -15,6 +16,10 @@ public class ButtonClick : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void ConfirmClick() {
+        SceneManager.LoadScene("SpawnTest");
     }
 
     public void ScrollRight() {
