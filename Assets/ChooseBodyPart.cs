@@ -2,40 +2,45 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ChooseLimb : MonoBehaviour
+public class ChooseBodyPart : MonoBehaviour
 {
-    public GameObject[] limbs = new GameObject[5];
+    public GameObject[] bodyParts = new GameObject[5];
     public BodyPartCooler armCooler;
     public BodyPartCooler legCooler;
     public BodyPartCooler headCooler;
 
-    public bool addLimb;
+    public bool addBodyPart;
 
     public int coolerIndex;
-    public int limbIndex;
+    public int bodyPartIndex;
     // Start is called before the first frame update
     void Start()
     {
-        limbIndex = 0;
+        bodyPartIndex = 0;
         coolerIndex = 0;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (addLimb) {
-            if (limbs[limbIndex].transform.childCount > 0) {
-                Destroy(limbs[limbIndex].transform.GetChild(0).gameObject);
+        if (addBodyPart)
+        {
+            if (bodyParts[bodyPartIndex].transform.childCount > 0)
+            {
+                Destroy(bodyParts[bodyPartIndex].transform.GetChild(0).gameObject);
             }
 
             NewLimb(armCooler.Part[coolerIndex]);
-            addLimb = false;
+            addBodyPart = false;
         }
+
     }
 
-    public void NewLimb(GameObject limb) {
+    public void NewLimb(GameObject limb)
+    {
         GameObject newLimb = limb;
-        Instantiate(newLimb, limbs[limbIndex].transform);
+        Instantiate(newLimb, bodyParts[bodyPartIndex].transform);
         coolerIndex++;
     }
 }
