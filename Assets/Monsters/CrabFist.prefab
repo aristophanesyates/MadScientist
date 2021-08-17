@@ -91,7 +91,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0810f9716087bd643a513674e05aecf1, type: 2}
+  - {fileID: 2100000, guid: 91cfc8a78e3ce1f44b9422998080c330, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -217,7 +217,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0810f9716087bd643a513674e05aecf1, type: 2}
+  - {fileID: 2100000, guid: 91cfc8a78e3ce1f44b9422998080c330, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -262,7 +262,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7133838674467218303}
   m_Layer: 0
-  m_Name: Arm 1
+  m_Name: CrabFist
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
